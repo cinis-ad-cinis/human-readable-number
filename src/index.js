@@ -1,5 +1,5 @@
 module.exports = function toReadable (number) {
-    const arr = ['','one','two','three','four', 'five','six','seven','eight','nine','ten','eleven','twelve', 'thirteen ','fourteen','fifteen','sixteen','seventeen','eighteen','nineteen'];
+    const arr = ['','one','two','three','four', 'five','six','seven','eight','nine','ten','eleven','twelve', 'thirteen','fourteen','fifteen','sixteen','seventeen','eighteen','nineteen'];
     const arrTens = ['', '', 'twenty','thirty','forty','fifty', 'sixty','seventy','eighty','ninety'];
 
     if (number === 0) {
@@ -7,7 +7,7 @@ module.exports = function toReadable (number) {
     }
 
     if (number > 0 && number < 20) {
-        return word = (arr[number]).trim();
+        return word = arr[number];
     }
 
     if (number >= 20 && number <= 99) {
